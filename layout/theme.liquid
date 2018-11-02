@@ -1,91 +1,544 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-  <title>{{ page_title }}</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="{{ page_description | escape }}">
-  <link rel="canonical" href="{{ canonical_url }}">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  {{ content_for_header }} <!-- Header hook for plugins -->
-  {{ 'theme.css.scss' | asset_url | stylesheet_tag }}
-  {{ 'theme.js' | asset_url | script_tag }}
+  <title>R H U D E</title>
+
+
+<link rel="canonical" href="https://rh-ude.com/" />
+
+<meta property="og:title" content="R H U D E | R H U D E" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://rh-ude.com/" />
+
+<meta property="og:type" content="website" />
+
+
+<meta property="og:site_name" content="R H U D E" />
+
+<meta name="author" content="R H U D E">
+
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+  <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/favicon.png?16804826639562558962" type="image/png" />
+  <link href="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/_base.css?16804826639562558962" rel="stylesheet" type="text/css" media="all" />
+  <!-- <link href="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/_settings.scss.css?16804826639562558962" rel="stylesheet" type="text/css" media="all" /> -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/theme.scss.css?16804826639562558962" rel="stylesheet" type="text/css" media="all" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css" rel="stylesheet" type="text/css" media="all" />
+
+
+  <!--[if lt IE 9]>
+    
+    <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/respond.min.js?16804826639562558962" type="text/javascript"></script>
+    <link href="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="https://rh-ude.com/search?q=fa15b98c9765389acd93de1801bb94f8" id="respond-redirect" rel="respond-redirect" />
+    <script src="https://rh-ude.com/search?q=fa15b98c9765389acd93de1801bb94f8" type="text/javascript"></script>
+  <![endif]-->
+
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/jquery.min.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/assets/themes_support/option_selection-ea4f4a242e299f2227b2b8038152223f741e90780c0c766883939e8902542bda.js" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/bootstrapify-option-selection.min.js?16804826639562558962" type="text/javascript"></script>
+
+  
+
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/isotope.pkgd.min.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/transition.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/button.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/carousel.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/collapse.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/dropdown.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/modal.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/tooltip.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/popover.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/typeahead.js?16804826639562558962" type="text/javascript"></script>
+
+  <script src="https://use.typekit.net/ihr5hil.js" type="text/javascript"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  
+
+  <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/21718711/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="aa36bda66ad64827bf1e6fc7a1ff6751">
+<meta id="in-context-paypal-metadata" data-shop-id="21718711" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, Helvetica Neue, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--google-pay{line-height:0 !important;padding:0 !important;border-radius:unset !important;width:80px !important}@media (max-width: 500px){.additional-checkout-button--google-pay{width:100% !important}}.gpay-iframe{height:44px !important;width:100%  !important;cursor:pointer;vertical-align:middle !important}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--paypal,.additional-checkout-button--venmo{vertical-align:top;line-height:0 !important;padding:0 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
+</style>
+<style>.shopify-payment-button__button--hidden {
+  visibility: hidden;
+}
+
+.shopify-payment-button__button {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 0 transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  transition: background 0.2s ease-in-out;
+}
+
+.shopify-payment-button__button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--unbranded {
+  background-color: #1990c6;
+  padding: 1em 2em;
+}
+
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #136f99;
+}
+
+.shopify-payment-button__more-options {
+  background: transparent;
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.shopify-payment-button__more-options:hover:not([disabled]) {
+  text-decoration: underline;
+}
+
+.shopify-payment-button__more-options[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--branded {
+  display: flex;
+  flex-direction: column;
+  min-height: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.shopify-payment-button__button--branded .shopify-cleanslate {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+</style>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":21718711,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/21718711","merchantName":"R H U D E","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"R H U D E","amount":"1.00"}}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"aa36bda66ad64827bf1e6fc7a1ff6751","betas":[],"domain":"rh-ude.com","shopId":21718711,"smart_payment_buttons_url":"https:\/\/cdn.shopifycloud.com\/payment-sheet\/assets\/latest\/spb.js"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "rhude-designs.myshopify.com";
+Shopify.currency = {"active":"USD"};
+Shopify.theme = {"name":"RHUDE","id":193042436,"theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "pay.shopify.com";
+window.ShopifyPay.crossStoreEnabled = true;</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/services.nofraud.com\/js\/device.js?shop=rhude-designs.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":21718711,"offset":-25200,"reqid":"8ea8c0e0-6269-403d-91f5-e794113be9be","pageurl":"rh-ude.com\/","u":"c61b446aeda8","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>window.Shopify = window.Shopify || {};
+window.Shopify.Checkout = window.Shopify.Checkout || {};
+window.Shopify.Checkout.apiHost = "rhude-designs.myshopify.com";</script>
+<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+
+(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":21718711,"isMerchantRequest":null,"themeId":193042436,"themeCityHash":751853970743916269}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1.0},"Google Analytics":{"trackingId":"UA-35912332-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.ShopifyAnalytics.lib = window.trekkie;
+    
+      ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+
+    
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"home"}
+        );
+      
+    
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-76ce6d7f3e50d4b8c05874c34d2ea1340c45e5babba61276dadcaeed488ca16a.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();</script>
+<script crossorigin="anonymous" defer="defer" src="//cdn.shopify.com/s/assets/shopify_pay/storefront-fe31d6a6f8b299bf1d018618c066f4704f961ac0b1939d90d804f157451c6312.js?v=20181030"></script>
+<script integrity="sha256-U14Cuvpq9RMTMvy5SjMwvTI6DwLk+m0lf/WLH0CS+Rw=" defer="defer" src="//cdn.shopify.com/s/assets/storefront/express_buttons-535e02bafa6af5131332fcb94a3330bd323a0f02e4fa6d257ff58b1f4092f91c.js" crossorigin="anonymous"></script>
+<script integrity="sha256-NfqRkSQwKw0JfNupCky6Zxtoijw8YUA8km/3gYu7kY8=" defer="defer" src="//cdn.shopify.com/s/assets/storefront/features-35fa919124302b0d097cdba90a4cba671b688a3c3c61403c926ff7818bbb918f.js" crossorigin="anonymous"></script>
+<script defer="defer" src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-68ca1924c495cfc55dac65f4853e0c9a395387ffedc8fe58e0f2e677f95d7f23.js"></script>
+
 </head>
-<body>
-<article>
-  <header>
-    <a href="/"><img src="#" alt-tag="#" itemprop="logo"></a>
-  </header>
-  <aside>
-    <nav>
-      <ul>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Lookbook</a></li>
-        <li><a href="#">Rally Sounds</a></li>
-        <li><a href="#">Stockists</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <main>
-    <h2>Subheader</h2>
-    <p>
-      Not to be mistaken with pseudo-classes, pseudo-elements allow you to style certain parts of a document. We can style after or before an element, the first letter or first line, the selection and the backdrop. Originally in CSS1 and CSS2 the pseudo -elements
-      started with a colon (:) which was the same as pseudo-classes. To separate the two in CSS3 pseudo elements now start with a double colon (::) this is not supported in all versions of Internet Explorer, and you can still use one colon.
-      <p>
-        <blockquote>
-          Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Aenean lacinia bibendum nulla sed consectetur.
-        </blockquote>
 
-        <h2>Why is it called a Pseudo-Element?</h2>
-        <p> The word pseudo is a Greek word that stands for “lying, false” and an element in HTML could be a paragraph or a header. Put the two together and we create an alternative description of a false paragraph or a false header and this is what the pseudo-element
-          is, a fake element which alters your HTML after load.
-        </p>
-        <details>
-          <summary>Copyright 2015.</summary>
-          <p>More information about the copyright and further details can be hidden</p>
-        </details>
-  </main>
-  <footer>
-    <ul>
-    <li><a href="">Instagram</a></li>
-    <li><a href="">Terms & Conditions</a></li>
-    <li><a href="">Contact</a></li>
-    </ul>
-</footer>
 
-</article>
+<body class=" page- template-index  has-cart has-prices has-top-navbar has-fixed-top-navbarbanner-window-width thumbnails-fit currencies index">
 
+  <div id="wrap">
+    
+    
+    <div id="content" class="container-fluid">
+      
+
+      
+
+      
+
+      <div class="row">
+        <div class="main-content col-xs-12 text-center">
+          <div class="row">
+            <div id="side-content">
+              <h1 class="shop-title"><a href="https://rh-ude.com" alt="R H U D E">R H U D E</a></h1>
+              
+              <ul class="nav nav-pills nav-stacked">
+                
+                
+
+<li class="">
+  <a href="/collections/shop-all" title="Shop">Shop</a>
+</li>
+
+
+                
+                
+
+<li class="">
+  <a href="/pages/media" title="Special Projects">Special Projects</a>
+</li>
+
+
+                
+                
+
+<li class="">
+  <a href="/pages/stockists-1" title="Stockists">Stockists</a>
+</li>
+
+
+                
+                
+
+<li class="">
+  <a href="/pages/information" title="Brand">Brand</a>
+</li>
+
+
+                
+                
+
+<li class="">
+  <a href="/pages/contact-us" title="Contact">Contact</a>
+</li>
+
+
+                
+                
+
+<li class="active dropdown">
+  <a href="#" title="Social" class="dropdown-toggle" data-toggle="dropdown">
+    Social
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    
+      
+  
+  
+  
+  
+  
+    <li><a tabindex="-1" href="//www.instagram.com/rhudedesigns" title="Instagram">Instagram</a></li>
+  
+
+
+
+    
+      
+  
+  
+  
+  
+  
+    <li><a tabindex="-1" href="//www.twitter.com/rhudedesigns" title="Twitter">Twitter</a></li>
+  
+
+
+
+    
+  </ul>
+</li>
+
+
+                
+                
+
+<li class="">
+  <a href="/pages/terms" title="Terms">Terms</a>
+</li>
+
+
+                
+              </ul>
+              
+              <p style="margin-top: 10px;">R H U D E ©</p>
+              <p>Temporary Webshop</p>
+            </div>
+
+            <div class="col-sm-10 " id="inner-content">
+            
+            
+
+
+<div class="row">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/NEW-SITE-PHOTO.jpg?16804826639562558962" alt="">
+      </div>
+    </div>
+  </div>
 </div>
+            </div>
+           </div>
+        </div>
+        
 
-  <!-- {% for link in linklists.main-menu.links %}
-    {% assign child_list_handle = link.title | handleize %}
-    {% if linklists[child_list_handle].links != blank %}
-      <a href="{{ link.url }}">{{ link.title }}</a>
-      [{% for childlink in linklists[child_list_handle].links %}
-        <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-      {% endfor %}]
-    {% else %}
-      <a href="{{ link.url }}">{{ link.title }}</a>
-    {% endif %}
-  {% endfor %}
+      </div>
+    </div>
+  </div>
 
-  <a href="/cart">cart</a>
+  
+  
+  <script src="/services/javascripts/currencies.js" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/jquery.currencies.js?16804826639562558962" type="text/javascript"></script>
+  <script>
+    var changeCurrency = function(oldCurrency, newCurrency){
+      Currency.convertAll(oldCurrency, newCurrency);
+      jQuery('.selected-currency').text(Currency.currentCurrency);
+    };
+  
+    /* Set currency format */
+    Currency.format = 'money_format';
+    // Sometimes merchants change their shop currency, let's tell our JavaScript file
+    Currency.money_with_currency_format[shopCurrency] = "${{amount}} USD";
+    Currency.money_format[shopCurrency] = "${{amount}}";
+    
+    /* Set current currency */
+    var shopCurrency = 'USD';
+    var defaultCurrency = '' || shopCurrency; // Default currency
+    var cookieCurrency = Currency.cookie.read(); // Cookie currency
+    
+    // If the cookie value does not correspond to any value in the currency dropdown.
+    if(jQuery('[name=currencies] option[value=' + cookieCurrency + ']').length === 0){
+      cookieCurrency = defaultCurrency;
+    }
+    
+    var currentCurrency = cookieCurrency || defaultCurrency; // Current currency
+    
+    /* Convert currency */
+    // Fix for customer account pages
+    jQuery('span.money span.money').each(function() {
+      jQuery(this).parents('span.money').removeClass('money');
+    });
+    
+    // Saving the base shop price
+    jQuery('span.money').each(function() {
+      jQuery(this).attr('data-currency-USD', jQuery(this).html());
+    });
+    
+    var changeCurrency = function(oldCurrency, newCurrency){
+      Currency.convertAll(oldCurrency, newCurrency);
+      jQuery('.selected-currency').text(Currency.currentCurrency);
+    };
+    
+    changeCurrency(shopCurrency, currentCurrency);
+  
+    /* Currency converter */
+    jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
+      var newCurrency = jQuery(this).val();
+      changeCurrency(Currency.currentCurrency, newCurrency);
+    });
+    
+    var original_selectCallback = window.selectCallback;
+    var selectCallback = function(variant, selector) {
+      original_selectCallback(variant, selector);
+      changeCurrency(shopCurrency, Currency.currentCurrency);
+    };
+  </script>
 
-  {% if shop.customer_accounts_enabled %}
-    {% if customer %}
-      <a href="/account">account</a>
-      {{ 'log out'  | customer_logout_link }}
-    {% else %}
-      {{ 'log in ' | customer_login_link }}
-      {{ 'register' | customer_register_link }}
-    {% endif %}
-  {% endif %}
 
-  <main role="main">
-    {{ content_for_layout }}
-  </main> --> 
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/_base.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/app.js?16804826639562558962" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/imgLiquid-min.js?16804826639562558962" type="text/javascript"></script>
+  
+    <script src="//cdn.shopify.com/s/files/1/2171/8711/t/2/assets/slick.min.js?16804826639562558962" type="text/javascript"></script>
+    <script>
+      $(document).ready(function($) {
+        $('.rhude-slider').slick({
+          autoplay: true,
+          autoplaySpeed: 2500,
+          fade: true,
+          infinite: true,
+        });
+      });
+    </script>
+  
 
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.search').typeahead({
+      name: 'Products',
+      local: []
+    }).on('typeahead:selected', function (object, datum) {
+      $(this).closest('form').submit();
+    });
+    
+    $('.thumbnail-image').each(function(){
+      $(this).height($(this).width() * (1 / 1));
+    });
 
+    
+
+  });
+  </script>
+
+  
 </body>
-</html> 
+</html>
+
