@@ -304,6 +304,8 @@ for (var attr in meta) {
 <script integrity="sha256-NfqRkSQwKw0JfNupCky6Zxtoijw8YUA8km/3gYu7kY8=" defer="defer" src="//cdn.shopify.com/s/assets/storefront/features-35fa919124302b0d097cdba90a4cba671b688a3c3c61403c926ff7818bbb918f.js" crossorigin="anonymous"></script>
 <script defer="defer" src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-68ca1924c495cfc55dac65f4853e0c9a395387ffedc8fe58e0f2e677f95d7f23.js"></script>
 
+ {{ content_for_header }}
+
 </head>
 
 
@@ -422,7 +424,7 @@ for (var attr in meta) {
             <div class="col-sm-10 " id="inner-content">
             
             
-
+{{ content_for_layout }}
 
 <div class="row">
 
