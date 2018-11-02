@@ -2,7 +2,3 @@ development:
   password: bc2ca9f213b26ce0d2eb6833fd6facc1
   theme_id: "40975401049"
   store: operationrally.myshopify.com
-  ignore_files:
-    - "*.gif"
-    - "*.jpg"
-    - config/settings_data.json
